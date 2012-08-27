@@ -1,6 +1,7 @@
 [Unit]
 Description=mpDris2
 Wants=mpd.service
+PartOf=gnome-settings-daemon.service
 After=gnome-settings-daemon.service
 
 [Service]

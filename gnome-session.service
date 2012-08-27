@@ -1,6 +1,7 @@
 [Unit]
 Description=GNOME session manager
 After=xorg.target
+Conflicts=gnome-sound-applet.service
 
 [Service]
 BusName=org.gnome.SessionManager

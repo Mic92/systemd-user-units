@@ -1,7 +1,7 @@
 [Unit]
 Description=Openbox Desktop Environment
 Wants=xorg.target
-Requires=dbus.socket
+Wants=openbox.service
 AllowIsolate=true
 
 [Install]
