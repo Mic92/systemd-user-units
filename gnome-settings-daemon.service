@@ -1,0 +1,10 @@
+[Unit]
+Description=GNOME Settings Daemon
+IgnoreOnIsolate=true
+
+[Service]
+BusName=org.gnome.SettingsDaemon
+ExecStart=/usr/lib/gnome-settings-daemon/gnome-settings-daemon
+
+[Install]
+Alias=dbus-org.gnome.SettingsDaemon.service

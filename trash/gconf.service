@@ -1,0 +1,9 @@
+[Unit]
+Description=GNOME Configuration Service
+
+[Service]
+BusName=org.gnome.GConf
+ExecStart=/usr/lib/GConf/gconfd-2
+
+[Install]
+Alias=dbus-org.gnome.GConf.service

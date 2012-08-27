@@ -1,0 +1,9 @@
+[Unit]
+Description=stalonetray systray
+PartOf=openbox.service
+
+[Service]
+ExecStart=/usr/bin/stalonetray -c ${XDG_CONFIG_HOME}/stalonetrayrc
+
+[Install]
+WantedBy=default.target

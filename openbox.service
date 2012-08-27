@@ -1,0 +1,14 @@
+[Unit]
+Description=Openbox
+After=xorg.target
+After=environment.target
+Conflicts=gnome-session.service
+
+[Service]
+ExecStart=/usr/bin/openbox
+ExecReload=/usr/bin/openbox --reload
+ExecStop=/usr/bin/openbox --exit
+
+KillMode=process
+Restart=always
+RestartSec=1

@@ -1,0 +1,10 @@
+[Unit]
+Description=GNOME session manager
+After=xorg.target
+
+[Service]
+BusName=org.gnome.SessionManager
+ExecStart=/usr/bin/gnome-session
+
+[Install]
+WantedBy=gnome.target

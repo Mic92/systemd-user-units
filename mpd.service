@@ -1,0 +1,10 @@
+[Unit]
+Description=Music Player Daemon
+Wants=mpDris2.service
+After=sound.target
+IgnoreOnIsolate=yes
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/mpd
+PIDFile=%t/mpd.pid

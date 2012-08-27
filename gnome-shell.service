@@ -1,0 +1,12 @@
+[Unit]
+Description=GNOME Shell
+After=xorg.target
+After=environment.target
+
+[Service]
+BusName=org.gnome.Shell
+ExecStart=/usr/bin/gnome-shell
+
+KillMode=process
+Restart=always
+RestartSec=1

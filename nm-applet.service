@@ -1,0 +1,10 @@
+[Unit]
+Description=NetworkManager applet
+PartOf=openbox.target
+
+[Service]
+BusName=org.gnome.network_manager_applet
+ExecStart=/usr/bin/nm-applet
+
+[Install]
+WantedBy=default.target

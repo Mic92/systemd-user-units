@@ -1,0 +1,8 @@
+[Unit]
+Description=mpDris2
+Wants=mpd.service
+After=gnome-settings-daemon.service
+
+[Service]
+BusName=org.mpris.MediaPlayer2.mpd
+ExecStart=/usr/bin/mpDris2
