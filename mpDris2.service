@@ -7,3 +7,7 @@ After=gnome-settings-daemon.service
 [Service]
 BusName=org.mpris.MediaPlayer2.mpd
 ExecStart=/usr/bin/mpDris2
+
+[Install]
+WantedBy=default.target
+WantedBy=mpd.service

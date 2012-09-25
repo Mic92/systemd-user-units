@@ -1,9 +1,10 @@
 [Unit]
-Description=GNOME session manager
+Description=The GNOME session manager
 After=xorg.target
-Conflicts=gnome-sound-applet.service
+Requires=dbus.socket
 
 [Service]
+Environment=DESKTOP_SESSION=gnome
 BusName=org.gnome.SessionManager
 ExecStart=/usr/bin/gnome-session
 

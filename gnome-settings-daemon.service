@@ -7,4 +7,5 @@ BusName=org.gnome.SettingsDaemon
 ExecStart=/usr/lib/gnome-settings-daemon/gnome-settings-daemon
 
 [Install]
+WantedBy=default.target
 Alias=dbus-org.gnome.SettingsDaemon.service
