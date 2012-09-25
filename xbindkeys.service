@@ -4,6 +4,7 @@ After=environment.target
 
 [Service]
 ExecStart=/usr/bin/xbindkeys -n -f ${XDG_CONFIG_HOME}/xbindkeys/xbindkeysrc
+KillMode=process
 
 [Install]
 WantedBy=default.target
